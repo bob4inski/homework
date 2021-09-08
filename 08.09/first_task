@@ -1,21 +1,8 @@
-
-def F(n):           #задание через цикл
-                    #вводим число N до которого нужно выводить
-    a = []
-    for i in range(0,n,2):
-        a.append(i)
-    return a
-
-def F2(n):          #решение через While
-    c = []
-    b = 0
-    while b < n:
-        c.append(b)
-        b += 2
-    return c
-
-print(F(10))
-print(F2(10))
+def Python_brr(n):
+    b = 'b' + 'r'*n
+    print("Python does",b)
+i = int(input())
+Python_brr(i)
 
 
 
