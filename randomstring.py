@@ -32,11 +32,21 @@ def mass(n,k):
 
 def prosent(mas):
     dlina_mass = len(mas)
-    ko= 0
+    ko_1 = 0
+    ko_0 = 0 
+    ko_11 = 0
+    
     for i in range(dlina_mass):
-        if Kol(mas) == 1:
-            ko += 1
-    return (ko/dlina_mass)
+        #print(Kol)
+        if Kol(mas[i]) == 1:
+            ko_1 += 1
+        elif Kol(mas[i]) == 0:
+            ko_0 += 1
+        else:
+            ko_11 += 1
+    massss = [ko_1/dlina_mass*100,' % строк, в которых больше заглавных',ko_0/dlina_mass*100,' % строк, в которых больше маленьких',ko_11/dlina_mass*100,' % строк, в которых букав поровну']
+
+    return (massss)
 
 
 
@@ -56,5 +66,8 @@ k = int(input())
 massiv_strok = mass(n,k)
 print(massiv_strok)
 
-print(prosent(massiv_strok))
+
+d = prosent(massiv_strok)
+for i in range(len(d)):
+    print(d[i])
 
