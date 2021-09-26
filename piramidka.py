@@ -1,7 +1,7 @@
 def piramidka(n):
 
     pir  = []
-    #if n % 2 ==0:
+    #if n % 2 ==0: 
     g = int(n // 2)+1
     pir = [] * g
     print(g)
@@ -24,7 +24,7 @@ for g in range(len(mass)):
 
 
 
-
+ 
 
 
     
